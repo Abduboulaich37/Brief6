@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+
+    <form action="">
+        <h1 id="text"></h1>
+        <input id="input"type="text">
+        <button>Submit</button>
+    </form>
+
+
+
+
+    <script>
+        let Mybtn = document.getElementById('btn');
+        let text = document.getElementById('text');
+        // Mybtn
+
+        // Mybtn.onclick = function() {
+        //     alert('Clicked');
+        // }
+
+        // Mybtn.oncontextmenu = function() {
+        //     alert('Clicked');
+        // }
+
+        // Mybtn.onmouseenter = function() {
+        //     alert('Clicked');
+        // }
+
+        // Mybtn.onmouseleave = function() {
+        //     alert('Clicked');
+        // }
+
+        // window.onload = function() {
+        //     alert('Clicked');
+        // }
+
+        //----------------------------------------------------------
+
+        // window
+
+        // window.onscroll = function() {
+        //     console.log('scrolling');
+        // }
+
+        // window.onresize = function() {
+        //     console.log('scrolling');
+        // }
+
+        //-----------------------------------------------------------
+
+        let Myinput = document.getElementById('input')
+        // Myinput
+
+
+        // Myinput.onfocus = function() {
+        //     document.getElementById('text').innerHTML = "input your password"
+        // }
+
+        Myinput.onblur = function() {
+            
+            if (Myinput.value === '123' )
+            alert('Correct !');
+            else
+            alert('Wrong !');
+
+        }
+
+        //     Myinput.oninput = function() {
+            
+        //     if (Myinput.value === '123' )
+        //     console.log('Correct !');
+        //     else
+        //     console.log('Wrong !');
+
+        // }
+
+        // Myinput.oninput = function() {
+            
+        //     if(Myinput.value ){
+        //          if (Myinput.value === '1234567890' )
+        //          document.getElementById('text').innerHTML = "correct"
+        //          else
+        //          document.getElementById('text').innerHTML = "wrong"
+        //          }
+ 
+        //  }
+
+
+
+
+
+    </script>
+</body>
+</html>

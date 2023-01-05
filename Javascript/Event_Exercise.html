@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .card {
+            background-color: aquamarine;
+        }
+        #ol {
+            display: flex;
+            flex-direction: column-reverse;     
+        }
+        .title {
+            display:flex ;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form>
+        <input type="text" name="task" id="task" /> <br />
+        <button type="button" onclick="add()">Add</button>
+    </form>
+      
+    <table>
+        <legend>Promotions</legend>
+        <ul>
+            
+        </ul> -->
+
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-xl-10">
+                        
+                        <div class="card">
+                      <h1 class="title">Add tasks</h1>
+                    <div class="card-body p-5">
+          
+                      
+                        <div class="form-outline mb-4">
+                            <input type="text" id="task" class="form-control" />
+                          <button type="submit" onclick="add()" class="btn btn-info ms-2">Add</button>
+                        </div>
+
+                        
+                     
+          
+                      <!-- Tabs content -->
+                      <div class="tab-content" id="ex1-content">
+                        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                            <ul class="list-group">
+                                <ol id="ol" class="list-group">
+
+                                </ol>
+                              </ul>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Tabs content -->
+          
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+    </table>
+
+      
+
+    
+
+
+        <script>
+           
+
+        function add() {
+
+        let li = document.createElement('li');
+        li.className = 'list-group-item';
+        let text_value = document.getElementById('task').value;
+        let text = document.createTextNode(text_value);
+        
+
+
+
+        li.appendChild(text);
+        document.querySelector('ol').appendChild(li).style.textAlign = 'center';
+        document.getElementById('task').value = "" ;
+
+        // let dele = document.createElement('button');
+        // dele.className = 'btn btn-info ms-2';
+        // document.querySelector('li').appendChild(dele);
+        
+
+
+
+        
+        }
+
+
+
+
+
+        </script>
+</body>
+</html>
